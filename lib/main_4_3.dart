@@ -15,6 +15,7 @@ class FavoriteButton extends StatelessWidget {
   final Set<NewsEntry> savedEntries;
   final FavoritePressedCallback handleFavoritePressed;
   final bool isAlreadySaved;
+
   FavoriteButton(
       {@required this.newsEntry,
       @required this.savedEntries,

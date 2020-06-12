@@ -11,6 +11,7 @@ class NewsEntry {
   final String type;
   final String url;
   final String domain;
+
   factory NewsEntry.fromMap(Map jsonMap) {
     return NewsEntry._(
         id: jsonMap['id'],
@@ -24,6 +25,7 @@ class NewsEntry {
         url: jsonMap['url'],
         domain: jsonMap['domain']);
   }
+
   NewsEntry._(
       {@required this.id,
       @required this.title,

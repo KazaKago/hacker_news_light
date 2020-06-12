@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
+
 import 'package:hacker_news_light/model/news_entry.dart';
 import 'package:http/http.dart' as http;
 

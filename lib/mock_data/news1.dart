@@ -44,7 +44,8 @@ const mockNews1 = [
     "time_ago": "5 hours ago",
     "comments_count": 47,
     "type": "link",
-    "url": "http://mitsloan.mit.edu/newsroom/articles/12-year-study-looks-at-effects-of-universal-basic-income/",
+    "url":
+        "http://mitsloan.mit.edu/newsroom/articles/12-year-study-looks-at-effects-of-universal-basic-income/",
     "domain": "mitsloan.mit.edu"
   },
   {
@@ -56,19 +57,22 @@ const mockNews1 = [
     "time_ago": "4 hours ago",
     "comments_count": 43,
     "type": "link",
-    "url": "https://www.npr.org/sections/health-shots/2018/05/07/607782359/lyme-disease-is-on-the-rise-again-heres-how-to-prevent-it",
+    "url":
+        "https://www.npr.org/sections/health-shots/2018/05/07/607782359/lyme-disease-is-on-the-rise-again-heres-how-to-prevent-it",
     "domain": "npr.org"
   },
   {
     "id": 17009366,
-    "title": "Brain cells that track location in space appear to also count beats in time",
+    "title":
+        "Brain cells that track location in space appear to also count beats in time",
     "points": 91,
     "user": "jacobwg",
     "time": 1525650832,
     "time_ago": "16 hours ago",
     "comments_count": 39,
     "type": "link",
-    "url": "https://www.quantamagazine.org/new-clues-to-how-the-brain-maps-time-20160126/",
+    "url":
+        "https://www.quantamagazine.org/new-clues-to-how-the-brain-maps-time-20160126/",
     "domain": "quantamagazine.org"
   },
   {
@@ -104,7 +108,8 @@ const mockNews1 = [
     "time_ago": "5 hours ago",
     "comments_count": 40,
     "type": "link",
-    "url": "https://medium.com/football-whispers-engineering-and-data-sci/failed-builds-cost-more-than-just-time-4e7c196cc8bc",
+    "url":
+        "https://medium.com/football-whispers-engineering-and-data-sci/failed-builds-cost-more-than-just-time-4e7c196cc8bc",
     "domain": "medium.com"
   },
   {
@@ -145,7 +150,8 @@ const mockNews1 = [
   },
   {
     "id": 17012240,
-    "title": "Impacted forest patches a key driver of malaria in Amazonian Brazil",
+    "title":
+        "Impacted forest patches a key driver of malaria in Amazonian Brazil",
     "points": 25,
     "user": "rkraaijenhagen",
     "time": 1525696886,
@@ -164,7 +170,8 @@ const mockNews1 = [
     "time_ago": "12 hours ago",
     "comments_count": 33,
     "type": "link",
-    "url": "https://oneraynyday.github.io/ml/2018/05/03/Reinforcement-Learning-Bandit/",
+    "url":
+        "https://oneraynyday.github.io/ml/2018/05/03/Reinforcement-Learning-Bandit/",
     "domain": "oneraynyday.github.io"
   },
   {
@@ -181,7 +188,8 @@ const mockNews1 = [
   },
   {
     "id": 17010334,
-    "title": "The relationship between humans and parrots can be surprisingly profound",
+    "title":
+        "The relationship between humans and parrots can be surprisingly profound",
     "points": 55,
     "user": "kawera",
     "time": 1525666162,
@@ -200,7 +208,8 @@ const mockNews1 = [
     "time_ago": "a day ago",
     "comments_count": 4,
     "type": "link",
-    "url": "https://www.economist.com/news/united-states/21741586-team-scientists-undertakes-ambitious-experiment-which-could-change-thinking-about",
+    "url":
+        "https://www.economist.com/news/united-states/21741586-team-scientists-undertakes-ambitious-experiment-which-could-change-thinking-about",
     "domain": "economist.com"
   },
   {
@@ -229,19 +238,22 @@ const mockNews1 = [
   },
   {
     "id": 17010208,
-    "title": "Teaching Programming Languages by Experimental and Adversarial Thinking",
+    "title":
+        "Teaching Programming Languages by Experimental and Adversarial Thinking",
     "points": 102,
     "user": "tluyben2",
     "time": 1525663633,
     "time_ago": "13 hours ago",
     "comments_count": 15,
     "type": "link",
-    "url": "http://cs.brown.edu/~sk/Publications/Papers/Published/pkf-teach-pl-exp-adv-think/",
+    "url":
+        "http://cs.brown.edu/~sk/Publications/Papers/Published/pkf-teach-pl-exp-adv-think/",
     "domain": "cs.brown.edu"
   },
   {
     "id": 17009875,
-    "title": "Cilium 1.0: Bringing the BPF Revolution to Kubernetes Networking and Security",
+    "title":
+        "Cilium 1.0: Bringing the BPF Revolution to Kubernetes Networking and Security",
     "points": 137,
     "user": "eatonphil",
     "time": 1525658412,
@@ -313,26 +325,30 @@ const mockNews1 = [
   },
   {
     "id": 17009547,
-    "title": "The Various Kinds of IO – Blocking, Non-Blocking, Multiplexed and Async",
+    "title":
+        "The Various Kinds of IO – Blocking, Non-Blocking, Multiplexed and Async",
     "points": 331,
     "user": "didibus",
     "time": 1525653088,
     "time_ago": "16 hours ago",
     "comments_count": 56,
     "type": "link",
-    "url": "https://www.rubberducking.com/2018/05/the-various-kinds-of-io-blocking-non.html",
+    "url":
+        "https://www.rubberducking.com/2018/05/the-various-kinds-of-io-blocking-non.html",
     "domain": "rubberducking.com"
   },
   {
     "id": 17013855,
-    "title": "Kubernetes and microservices: Making the web faster, stable, and more open",
+    "title":
+        "Kubernetes and microservices: Making the web faster, stable, and more open",
     "points": 3,
     "user": "dankohn1",
     "time": 1525709313,
     "time_ago": "11 minutes ago",
     "comments_count": 0,
     "type": "link",
-    "url": "https://venturebeat.com/2018/05/06/kubernetes-and-microservices-a-developers-movement-to-make-the-web-faster-stable-and-more-open/",
+    "url":
+        "https://venturebeat.com/2018/05/06/kubernetes-and-microservices-a-developers-movement-to-make-the-web-faster-stable-and-more-open/",
     "domain": "venturebeat.com"
   },
   {
@@ -344,7 +360,8 @@ const mockNews1 = [
     "time_ago": "13 hours ago",
     "comments_count": 2,
     "type": "link",
-    "url": "https://www.facebook.com/notes/kent-beck/wrong-the-answer-is-definitely-maybe/1883453251687530/",
+    "url":
+        "https://www.facebook.com/notes/kent-beck/wrong-the-answer-is-definitely-maybe/1883453251687530/",
     "domain": "facebook.com"
   },
   {
