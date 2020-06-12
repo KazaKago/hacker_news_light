@@ -17,8 +17,8 @@ class FavoriteButton extends StatelessWidget {
   final bool isAlreadySaved;
   FavoriteButton(
       {@required this.newsEntry,
-        @required this.savedEntries,
-        @required this.handleFavoritePressed})
+      @required this.savedEntries,
+      @required this.handleFavoritePressed})
       : isAlreadySaved = savedEntries.contains(newsEntry);
 
   @override
@@ -56,7 +56,7 @@ class NewsEntriesPage extends StatefulWidget {
 
 class NewsEntriesState extends State<NewsEntriesPage> {
   final GlobalKey<RefreshIndicatorState> _refreshIndicatorKey =
-  GlobalKey<RefreshIndicatorState>();
+      GlobalKey<RefreshIndicatorState>();
   final List<NewsEntry> _newsEntries = [];
   final Set<NewsEntry> _savedEntries = Set<NewsEntry>();
   final TextStyle _biggerFontStyle = TextStyle(fontSize: 18.0);
@@ -145,7 +145,7 @@ class NewsEntriesState extends State<NewsEntriesPage> {
             ),
           );
         }
-      } else if (i > _newsEntries.length) {
+      } else {
         return null;
       }
     });
@@ -159,7 +159,7 @@ class NewsEntriesState extends State<NewsEntriesPage> {
         style: _biggerFontStyle,
       ),
       subtitle:
-      Text('${newsEntry.domain} | ${newsEntry.commentsCount} comments'),
+          Text('${newsEntry.domain} | ${newsEntry.commentsCount} comments'),
       trailing: FavoriteButton(
           newsEntry: newsEntry,
           savedEntries: _savedEntries,
@@ -189,7 +189,7 @@ class NewsEntriesState extends State<NewsEntriesPage> {
   _handleFavoritePressed(
       NewsEntry newsEntry, bool isAlreadySaved, Set<NewsEntry> savedEntries) {
     setState(
-          () {
+      () {
         if (isAlreadySaved) {
           savedEntries.remove(newsEntry);
         } else {
@@ -204,7 +204,7 @@ class NewsEntriesState extends State<NewsEntriesPage> {
       MaterialPageRoute(
         builder: (context) {
           final tiles = _savedEntries.map(
-                (entry) {
+            (entry) {
               return ListTile(
                 title: Text(
                   entry.title,
@@ -213,12 +213,10 @@ class NewsEntriesState extends State<NewsEntriesPage> {
               );
             },
           );
-          final divided = ListTile
-              .divideTiles(
+          final divided = ListTile.divideTiles(
             context: context,
             tiles: tiles,
-          )
-              .toList();
+          ).toList();
 
           return Scaffold(
             appBar: AppBar(

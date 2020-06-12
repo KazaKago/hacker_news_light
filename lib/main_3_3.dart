@@ -85,7 +85,7 @@ class NewsEntriesState extends State<NewsEntriesPage> {
             ),
           );
         }
-      } else if (i > _newsEntries.length) {
+      } else {
         return null;
       }
     });

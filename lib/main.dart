@@ -147,7 +147,7 @@ class NewsEntriesState extends State<NewsEntriesPage> {
             ),
           );
         }
-      } else if (i > _newsEntries.length) {
+      } else {
         return null;
       }
     });
@@ -218,12 +218,10 @@ class NewsEntriesState extends State<NewsEntriesPage> {
               );
             },
           );
-          final divided = ListTile
-              .divideTiles(
-                context: context,
-                tiles: tiles,
-              )
-              .toList();
+          final divided = ListTile.divideTiles(
+            context: context,
+            tiles: tiles,
+          ).toList();
 
           return Scaffold(
             appBar: AppBar(

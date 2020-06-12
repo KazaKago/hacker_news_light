@@ -7,7 +7,6 @@ import 'package:hacker_news_light/model/news_entry.dart';
 
 void main() => runApp(HackerNewsLight());
 
-
 typedef void FavoritePressedCallback(
     NewsEntry newsEntry, bool isAlreadySaved, Set<NewsEntry> savedEntries);
 
@@ -18,8 +17,8 @@ class FavoriteButton extends StatelessWidget {
   final bool isAlreadySaved;
   FavoriteButton(
       {@required this.newsEntry,
-        @required this.savedEntries,
-        @required this.handleFavoritePressed})
+      @required this.savedEntries,
+      @required this.handleFavoritePressed})
       : isAlreadySaved = savedEntries.contains(newsEntry);
 
   @override
@@ -138,7 +137,7 @@ class NewsEntriesState extends State<NewsEntriesPage> {
             ),
           );
         }
-      } else if (i > _newsEntries.length) {
+      } else {
         return null;
       }
     });
@@ -152,7 +151,7 @@ class NewsEntriesState extends State<NewsEntriesPage> {
         style: _biggerFontStyle,
       ),
       subtitle:
-      Text('${newsEntry.domain} | ${newsEntry.commentsCount} comments'),
+          Text('${newsEntry.domain} | ${newsEntry.commentsCount} comments'),
       trailing: FavoriteButton(
           newsEntry: newsEntry,
           savedEntries: _savedEntries,
@@ -182,7 +181,7 @@ class NewsEntriesState extends State<NewsEntriesPage> {
   _handleFavoritePressed(
       NewsEntry newsEntry, bool isAlreadySaved, Set<NewsEntry> savedEntries) {
     setState(
-          () {
+      () {
         if (isAlreadySaved) {
           savedEntries.remove(newsEntry);
         } else {

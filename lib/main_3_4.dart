@@ -107,7 +107,7 @@ class NewsEntriesState extends State<NewsEntriesPage> {
             ),
           );
         }
-      } else if (i > _newsEntries.length) {
+      } else {
         return null;
       }
     });
@@ -121,7 +121,7 @@ class NewsEntriesState extends State<NewsEntriesPage> {
         style: _biggerFontStyle,
       ),
       subtitle:
-      Text('${newsEntry.domain} | ${newsEntry.commentsCount} comments'),
+          Text('${newsEntry.domain} | ${newsEntry.commentsCount} comments'),
     );
   }
 
