@@ -102,6 +102,8 @@ class NewsEntriesState extends State<NewsEntriesPage> {
 
   Future<Null> _getInitialNewsEntries() async {
     _nextPage = 1;
+    _isLastPage = false;
+    _newsEntries.clear();
     await _getNewsEntries();
   }
 

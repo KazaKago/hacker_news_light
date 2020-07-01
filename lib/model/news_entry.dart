@@ -37,4 +37,12 @@ class NewsEntry {
       @required this.type,
       @required this.url,
       @required this.domain});
+
+  @override
+  bool operator ==(other) {
+    return id == other.id;
+  }
+
+  @override
+  int get hashCode => id;
 }
