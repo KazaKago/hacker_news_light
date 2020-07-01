@@ -56,8 +56,6 @@ class NewsEntriesPage extends StatefulWidget {
 }
 
 class NewsEntriesState extends State<NewsEntriesPage> {
-  final GlobalKey<RefreshIndicatorState> _refreshIndicatorKey =
-      GlobalKey<RefreshIndicatorState>();
   final List<NewsEntry> _newsEntries = [];
   final Set<NewsEntry> _savedEntries = Set<NewsEntry>();
   final TextStyle _biggerFontStyle = TextStyle(fontSize: 18.0);
@@ -118,7 +116,6 @@ class NewsEntriesState extends State<NewsEntriesPage> {
       );
     } else {
       return RefreshIndicator(
-        key: _refreshIndicatorKey,
         onRefresh: _getInitialNewsEntries,
         child: _buildNewsEntriesListView(),
       );
