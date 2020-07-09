@@ -120,15 +120,10 @@ class NewsEntriesState extends State<NewsEntriesPage> {
   }
 
   Widget _buildNewsEntriesListView() {
-    return ListView.builder(itemBuilder: (BuildContext context, int index) {
-      if (index.isOdd) return Divider();
-
-      final i = index ~/ 2;
-      if (i < _newsEntries.length) {
-        return _buildNewsEntryRow(_newsEntries[i]);
-      } else if (i == _newsEntries.length) {
-        if (_isLastPage) {
-          return null;
+    return ListView.separated(
+      itemBuilder: (BuildContext context, int index) {
+        if (index < _newsEntries.length) {
+          return _buildNewsEntryRow(_newsEntries[index]);
         } else {
           _getNewsEntries();
           return Center(
@@ -140,10 +135,12 @@ class NewsEntriesState extends State<NewsEntriesPage> {
             ),
           );
         }
-      } else {
-        return null;
-      }
-    });
+      },
+      separatorBuilder: (BuildContext context, int index) {
+        return Divider();
+      },
+      itemCount: _newsEntries.length + (_isLastPage ? 0 : 1),
+    );
   }
 
   Widget _buildNewsEntryRow(NewsEntry newsEntry) {

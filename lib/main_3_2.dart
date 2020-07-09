@@ -59,16 +59,15 @@ class NewsEntriesState extends State<NewsEntriesPage> {
   }
 
   Widget _buildNewsEntriesListView() {
-    return ListView.builder(itemBuilder: (BuildContext context, int index) {
-      if (index.isOdd) return Divider();
-
-      final i = index ~/ 2;
-      if (i < _newsEntries.length) {
-        return _buildNewsEntryRow(_newsEntries[i]);
-      } else {
-        return null;
-      }
-    });
+    return ListView.separated(
+      itemBuilder: (BuildContext context, int index) {
+        return _buildNewsEntryRow(_newsEntries[index]);
+      },
+      separatorBuilder: (BuildContext context, int index) {
+        return Divider();
+      },
+      itemCount: _newsEntries.length,
+    );
   }
 
   Widget _buildNewsEntryRow(NewsEntry newsEntry) {
